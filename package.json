@@ -11,6 +11,7 @@
   "dependencies": {
     "autoprefixer": "10.4.15",
     "debug": "^4.3.4",
+    "env": "^0.0.2",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.2",
     "formik": "^2.4.5",
