@@ -1,29 +1,24 @@
 import CardButton from "./CardButton";
 import CardButtonAdd from "./CardButtonAdd";
 import Image from "next/image";
-import useFetch from "../../utils/useFetch.js";
+import AxiosGet from '../../utils/fetch'
 
-export default function Card () { 
-  const {data} = useFetch("https://fake-api-bay.vercel.app/postres");
-  
+export default function Card() {
+  const { data } = AxiosGet("https://fake-api-bay.vercel.app/productos");
+
   return (
-    <article>
-      <div>
-        <div className="flex flex-col p-5">
-          <div className="overflow-hidden rounded-xl">
-            {/* Verifica si data y data.postres están definidos antes de intentar acceder a sus propiedades */}
-            {data.map((item) => (
-              <div key={item.id}>
-                <Image src={item.image} alt={item.name} width={200} height={200} />
-                <p className="mt-3 text-lg text-slate-500">{item.price}</p>
-                {item.description}
-              </div>
-            ))}
+    <section>
+      <article>
+        {data.map((product) => (
+          <div key={product.id}>
+            <Image src={product.image} alt={product.name} width={200} height={200} />
+            <p>{product.name}</p>
+            <p>{product.price}</p>
+            <CardButton />
+            <CardButtonAdd />
           </div>
-          <CardButton />
-          <CardButtonAdd />
-        </div>
-      </div>
-    </article>
+        ))}
+      </article>
+    </section>
   );
 }
