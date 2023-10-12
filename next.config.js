@@ -2,13 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    domains: ['res.cloudinary.com', 'fake-api-bay.vercel.app'],
     remotePatterns:[
       {
         protocol: 'https',
-        hostname: 'console.cloudinary.com',
         port: '',
+        hostname: 'fake-api-bay.vercel.app',
         pathname: '/console/**'
       }
+      
     ]
   }
 }
