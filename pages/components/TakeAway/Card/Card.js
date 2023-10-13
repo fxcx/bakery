@@ -4,7 +4,7 @@ import Image from "next/image";
 import AxiosGet from '../../utils/fetch'
 
 export default function Card() {
-  const { data } = AxiosGet("https://fake-api-bay.vercel.app/productos");
+  const { data } = AxiosGet("https://fake-api-bay.vercel.app/menuInfantil");
 
   return (
     <section>
