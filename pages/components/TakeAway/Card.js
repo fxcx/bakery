@@ -1,7 +1,7 @@
 import CardButton from "./CardButton";
 import CardButtonAdd from "./CardButtonAdd";
 import Image from "next/image";
-import  {useAxiosGet}  from "../../utils/fetch.js";
+import  {useAxiosGet}  from "../../utils/usefetch";
 import { useState } from "react";
 
 export default function Card() {
