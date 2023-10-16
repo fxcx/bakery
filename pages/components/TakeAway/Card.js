@@ -1,12 +1,12 @@
 import CardButton from "./CardButton";
 import CardButtonAdd from "./CardButtonAdd";
 import Image from "next/image";
-import  useAxiosGet  from "../utils/fetch";
+import  {useAxiosGet}  from "../utils/fetch.js";
 import { useState } from "react";
 
 export default function Card() {
   const [categoryFilter, setCategoryFilter] = useState('vinos');
-  const { data } = useAxiosGet(
+  const { data, loading, error } = useAxiosGet(
     `https://fake-api-bay.vercel.app/${categoryFilter}`
   );
 
