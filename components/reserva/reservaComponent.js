@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { IoLocationSharp } from "react-icons/io5";
-import { ThemeContext } from "@/pages/context/ThemeContextProvider";
+import { ThemeContext } from "../../context/ThemeContextProvider";
 import { useContext } from "react";
 
 const Reserva = () => {

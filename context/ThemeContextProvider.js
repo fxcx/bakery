@@ -1,4 +1,3 @@
-import { flightRouterStateSchema } from "next/dist/server/app-render/types";
 import { createContext, useState } from "react";
 
 export const ThemeContext = createContext();

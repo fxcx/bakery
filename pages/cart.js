@@ -1,6 +1,6 @@
-import CartItem from "../src/components/Cart/CartItem";
+import CartItem from "../../components/Cart/CartItem";
 import { FaShoppingCart } from "react-icons/fa";
-import { ThemeContext } from "./context/ThemeContextProvider";
+import { ThemeContext } from "../../context/ThemeContextProvider";
 import { useContext } from "react";
 
 const Cart = () => {

@@ -1,10 +1,10 @@
 /***** COMPONENTS  *****/
-import Hero from "../src/components/Hero/Hero";
-import Carousel from "../src/components/Carousel/Carousel";
-import TakeawayBanner from "../src/components/TakeAway/TakeawayBanner";
-import { ThemeContext } from "./context/ThemeContextProvider";
+import Hero from "../../components/Hero/Hero";
+import Carousel from "../../components/Carousel/Carousel";
+import TakeawayBanner from "../../components/TakeAway/TakeawayBanner";
+import { ThemeContext } from "../../context/ThemeContextProvider";
 import { useContext } from "react";
-import Reserva from "../src/components/about/reserva";
+import Reserva from "../../components/reserva/reservaComponent";
 export default function Home() {
   const data = useContext(ThemeContext);
 

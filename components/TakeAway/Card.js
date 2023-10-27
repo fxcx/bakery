@@ -25,20 +25,6 @@ export default function Card({data}) {
     <>
       <section>
         <article>
-          {data.map((products) => (
-            <div key={products.id}>
-              <Image
-                src={products.image}
-                alt={products.name}
-                width={200}
-                height={200}
-              />
-              <p>{products.name}</p>
-              <p>{products.price}</p>
-              <CardButton />
-              <CardButtonAdd />
-            </div>
-          ))}
         </article>
       </section>
     </>
