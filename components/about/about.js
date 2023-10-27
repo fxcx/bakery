@@ -4,7 +4,7 @@ import imageAbout1 from "/public/images/aboutImage/img 1.png";
 import imageAbout3 from "/public/images/aboutImage/img 3.png";
 // subcomponentes
 import AboutDueño from "./aboutDueño";
-import Reserva from "../reserva/reservaComponent";
+import Reserva from "../reservaComponent/reservaComponent";
 
 export default function About() {
   return (
