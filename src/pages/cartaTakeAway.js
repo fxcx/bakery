@@ -1,7 +1,7 @@
 /***** REACT COMPONENTS  *****/
 import React from "react";
 /***** COMPONENTS  *****/
-import Card from "./components/TakeAway/Card";
+import Card from "../src/components/TakeAway/Card";
 import { ThemeContext } from "./context/ThemeContextProvider";
 import { useContext } from "react";
 
