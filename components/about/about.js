@@ -1,17 +1,15 @@
-
 import Image from "next/image";
 import imageAbout2 from "/public/images/aboutImage/img 2.png";
 import imageAbout1 from "/public/images/aboutImage/img 1.png";
 import imageAbout3 from "/public/images/aboutImage/img 3.png";
 // subcomponentes
 import AboutDueño from "./aboutDueño";
-import Reserva from "./reserva";
+import Reserva from "../reservaComponent/reservaComponent";
 
 export default function About() {
   return (
     <>
       <section className="md:flex flex-row-reverse gap-6 justify-center">
-
         <article className="md:grid place-content-start">
           <div className="grid place-items-center my-5">
             <h2 className="font-roboto text-2xl md:text-5xl font-normal leading-14 tracking-normal text-center p-[1rem]">

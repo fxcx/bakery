@@ -1,15 +1,20 @@
-import About from "./components/about/about";
-import Hero from "./components/Hero/Hero";
-import Carousel from "./components/Carousel/Carousel";
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
-
+/***** COMPONENTS  *****/
+import Hero from "../components/Hero/Hero";
+import Carousel from "../components/Carousel/Carousel";
+import TakeawayBanner from "../components/TakeAway/TakeawayBanner";
+import { ThemeContext } from "../context/ThemeContextProvider";
+import { useContext } from "react";
+import Reserva from "../components/reservaComponent/reservaComponent";
 export default function Home() {
+  const data = useContext(ThemeContext);
+
+  const [theme] = data;
   return (
-    <main>
-      <Hero/>
+    <main className={theme}>
+      <Hero />
       <Carousel />
-      <About />
+      <TakeawayBanner />
+      <Reserva />
     </main>
   );
 }
